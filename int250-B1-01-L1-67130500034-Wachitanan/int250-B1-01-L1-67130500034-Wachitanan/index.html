@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home">
+        <header>
+            <b>Unit Conversations</b>
+        </header>
+
+        <nav>
+            <div class="topdiv">
+                <a href="#temperature">
+                    <button class="topmenu">Temperature</button>
+                </a>
+                <a href="#weight">
+                    <button class="topmenu">Weight</button>
+                </a>
+                <a href="#distance">
+                    <button class="topmenu">Distance</button>
+                </a>
+            </div>
+        </nav>
+    </section>    
+
+    <div id="conversations">
+        <section id="temperature" class="b temperature">
+            <div id="tmp">
+                
+                <figure>
+                    <img src="termo.png" width="200px" alt="Thermometer">
+                    <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+
+                </figure>
+
+                <article class="b temperature">
+                    <fieldset>
+                        <legend>Temperature Conversion</legend>
+
+                        <label for="celsius">Celsius</label>
+                        <input type="number" id="celsius" name="celsius">
+
+                        <br><br>
+
+                        <button id="temp-btn" onclick="temperature()">Convert</button>
+
+                        <br><br>
+
+                        <label for="fahrenheit">Fahrenheit</label>
+                        <input type="text" id="fahrenheit" name="fahrenheit" readonly>
+                    </fieldset>
+                </article>
+                
+                <aside>
+                    To convert Celsius to Fahrenheit manually, multiply the Celsius
+                    temperature by 9/5 and then add 32.
+                </aside>
+            </div>
+        </section>
+
+        <section id="weight" class="b weight">
+            <div id="wgt">
+
+                <figure>
+                    <img src="weight.png" width="200px" alt="Weight conversation">
+                    <figcaption>Kilograms to Pounds Conversation</figcaption>
+                </figure>
+
+                <article class="b weight">
+                    <fieldset>
+                        <legend>Weight</legend>
+
+                        <label for="kilograms">Kilograms:</label>
+                        <input type="number" name="kilograms" id="kilo">
+
+                        <br><br>
+
+                        <button id="weight-btn" onclick="weight()">Convert</button>
+
+                        <br><br>
+
+                        <label for="pounds">Pounds:</label>
+                        <input type="number" id="pounds" name="pounds" readonly>
+
+                    </fieldset>
+                </article>
+
+                <aside>
+                    To convert kilograms to pounds, multiply the kilogram value by 2.205.
+                </aside>
+            </div>
+
+        </section>
+
+        <section id="distance" class="b distance">
+            <div id="dst">
+
+                <figure>
+                    <img src="speedo.png" width="200px" alt="Distance conversion">
+                    <figcaption>Kilometer to Mile Conversion</figcaption>
+                </figure>
+
+                <article class="b distance">
+                    <fieldset>
+                        <legend>Distance</legend>
+
+                        <label for="km">Kilometers:</label>
+                        <input type="number" id="km" name="kilometers">
+                    <br><br>
+
+                    <button id="distance-btn" onclick="distance()">Convert</button>
+
+                    <br><br>
+
+                    <label for="miles">Miles:</label>
+                    <input type="text" id="miles" name="miles" readonly>
+                    </fieldset>
+                </article>
+
+                <aside>
+                     To convert kilometers to miles, divide the kilometer value by 1.609.
+                </aside>
+            </div>
+        </section>
+    </div>
+    <a href="#home" class="iconbutton">
+        <img src="home.png" alt="Home">
+    </a>
+
+    <footer>
+        Unit Conversions App
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
