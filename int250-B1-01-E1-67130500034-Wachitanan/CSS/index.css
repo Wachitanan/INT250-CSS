@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+
+}
+
+header a {
+    color:#000;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+.signin-btn {
+    background-color: #1a73e8;
+    color: #FFF;
+    border: none;
+    padding: 9px 23x;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.signin-btn:hover{
+    background-color: #1765cc;
+    box-shadow:0 1px 3px rgba(0,0,0,0.3);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0;
+    justify-content: flex-start;
+    padding-top: 120px; /* ปรับเลขนี้ */
+}
+
+.google-logo{
+    width: 30%;
+    height: auto;
+    max-width: 400px;
+    margin-top: 60px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 584px;
+    margin: 20px 0;
+}
+.search-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 10px 15px;
+    width: 100%;
+    height: 20px;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+.search-hint {
+    position: absolute;
+    left: 45px;
+    color: #9aa0a6;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.search-input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.search-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px 16px;
+}
+
+
+.more-icon {
+    width: 1%;
+    max-width: 300px;
+    height: auto;
+}
+.more-icon:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.search-icon{
+    width: 2.5%;
+    height: auto;
+    max-width: 300px;
+}
+.microphone-icon{
+    width: 3.5%;
+    height: auto;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+}
+.camera-icon {
+    width: 3.5%;
+    height: auto;
+    max-width: 300px;
+}
+.pencil-icon {
+    width: 1%;
+    height: auto;
+    max-width: 300px;
+}
